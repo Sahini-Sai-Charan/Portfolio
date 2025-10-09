@@ -1,0 +1,30 @@
+trigger:
+  - main  # or your default branch name
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+    submodules: true
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '16.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm install
+    displayName: 'Install dependencies'
+
+  - script: |
+      npm run build
+    displayName: 'Build application'
+
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '/build'
+      api_location: ''  # If you don't have an API
+      output_location: ''  # Since build output is directly in the build folder
+      azure_static_web_apps_api_token: $(AZURE_STATIC_WEB_APP_TOKEN)
+    displayName: 'Deploy to Azure Static Web Apps'
