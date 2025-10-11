@@ -21,6 +21,13 @@ steps:
       npm run build
     displayName: 'Build application'
 
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: 'build'
+      artifactName: 'portfolio-build'
+      publishLocation: 'Container'
+    displayName: 'Publish Build Artifacts'
+
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/build'
