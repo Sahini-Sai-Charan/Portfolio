@@ -416,56 +416,60 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Learn with me and explore some of my personal blog posts",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://devopscube.com/list-of-devops-blogs-and-resources/",
+      title: "Joining DevOps? This is for you…",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Curated for newcomers, this blog covers foundational DevOps concepts, tools, and cultural practices."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://www.geeksforgeeks.org/blogs/devops-projects/",
+      title: "Ready to build? Level up with real DevOps projects…",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "Offers hands-on projects like CI/CD pipelines, container orchestration, and monitoring setups — ideal for building real-world experience."
+    },
+    {
+      url: "https://www.diffblue.com/resources/best-devops-blogs-2025/",
+      title: "Already in the game? Stay sharp with expert DevOps insights…",
+      description:
+        "Curates high-level insights from industry leaders on platform engineering, observability, and scaling DevOps in enterprise environments."
+    }    
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
+const linkedinRecommendations = {
+  title: "LINKEDIN RECOMMENDATIONS",
+  subtitle: emoji("What my colleagues say about my work 💬"),
+  recommendations: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      name: "Sandeep Palaparti",
+      role: "Project Manager at Infosys Ltd",
+      recommendation: "I had the pleasure of working with Sai Charan at Infosys for three years, where we collaborated on the Charles Schwab project. Throughout this time, Sai Charan consistently demonstrated outstanding Mainframe expertise and strong skills in deploying applications on Linux environments. He played a key role in successfully managing the complete tax season, and his technical excellence, reliability, and collaborative spirit made a lasting impact on the project and the team. Sai Charan is not only a highly skilled professional but also a genuinely great colleague to work with.",
+      date: "June 2021"
+    },
+    {
+      name: "Gurinder Singh Bains",
+      role: "Product Owner at GSK",
+      recommendation: "I had the pleasure of working with Charan at GSK for two years, where he was part of my team as a DevOps Engineer. During this time, he played a key role in supporting the cloud migration of an on-prem hosted application as well as deploying and maintaining custom gadgets we developed. Charan’s strong knowledge of Google Cloud Platform (GCP) was instrumental in the success of both projects. He consistently demonstrated a high level of technical expertise, dedication, and attention to detail. Beyond his technical skills, Charan is very approachable and a great team player, always willing to help others and ensure high-quality outcomes. I would highly recommend Charan to any organization looking for a skilled and reliable DevOps Engineer who can deliver results and collaborate effectively.",
+      date: "Novemeber 2024"
+    },
+    {
+      name: "Adam Anderson",
+      role: "Principal Product Manager at GSK",
+      recommendation: "As a product manager accountable for enabling digital and ML investments in functional genomics, I fully appreciate how our teams greatly benefited from Charan's DevSecOps expertise and 'CAN DO' attitude. Charan worked across a number of our digital products spanning on premise and cloud deployments. In particular, Charan was instrumental in the successful rollout of a gene expression analytics tool co-developed with a third party. Not only did he deliver the initial build and deployment automation and enable the upstream data pipelining from our Hadoop cluster, Charan continued to deftly collaborate with our third party partner to routinely deliver to the agreed minor and major release cadence. Along the way, Charan routinely drove solution discovery and implementation to some more challenging technical issues (e.g., load balancing asynchronous requests and migrating our Kubernetes cluster to cloud). Charan would be an excellent addition to any agile effort looking for a positively spirited, outcomes-focused DevSecOps engineer.",
+      date: "Novemeber 2024"
+    }     
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
+// Sections removed
 
 // Resume Section
 const resumeSection = {
@@ -506,10 +510,9 @@ export {
   bigProjects,
   achievementSection,
   blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  linkedinRecommendations
 };

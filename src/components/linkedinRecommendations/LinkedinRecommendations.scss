@@ -1,0 +1,105 @@
+@import "../../_globalColor";
+
+.recommendations-main-div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1200px;
+}
+
+.recommendations-header {
+  text-align: left;
+  margin-bottom: 3rem;
+  padding-left: 20px;
+}
+
+.recommendations-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0;
+  color: $titleColor;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+.recommendations-subtitle {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.recommendations-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 20px;
+}
+
+.recommendation-card {
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  &.dark-mode {
+    background: #171c28;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.recommendation-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: $textColor;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.recommendation-info {
+  border-top: 1px solid $subTitle;
+  padding-top: 15px;
+}
+
+.recommendation-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: $titleColor;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.recommendation-role {
+  font-size: 14px;
+  color: $subTitle;
+  margin: 5px 0;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.recommendation-date {
+  font-size: 12px;
+  color: $subTitle;
+  margin: 0;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
