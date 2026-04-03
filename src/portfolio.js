@@ -20,10 +20,11 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Sai Charan Sahini",
+  username: "Sahini Sai Charan",
   title: "Hello, I'm Sai Charan",
   subTitle: emoji(
-    "A passionate DevOps and Cloud Engineer 🚀 with hands-on experience in automating infrastructure, orchestrating CI/CD pipelines, and integrating AI tools to optimize developer workflows. Skilled in Terraform, Kubernetes, and AI integrated DevOps workflows — I build scalable systems that think, adapt, and deliver."
+    // "A passionate DevOps and Cloud Engineer 🚀 with hands-on experience in automating infrastructure, orchestrating CI/CD pipelines, and integrating AI tools to optimize developer workflows. Skilled in Terraform, Kubernetes, and AI integrated DevOps workflows — I build scalable systems that think, adapt, and deliver."
+    "Dynamic Cloud & DevOps Leader 🌐 with nearly a decade of experience driving cloud transformation, infrastructure automation, and system reliability across AWS, Azure, and GCP. Skilled in Terraform, Kubernetes, and AI‑integrated DevOps workflows, I specialize in building scalable, secure, and resilient systems. Passionate about embedding security into CI/CD, orchestrating multi‑cloud environments, and leveraging AI tools to accelerate delivery and optimize performance."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1GXF2Sqg6d-vZ-PWyTNi0NvqPKVwDUUwK/view?usp=share_link", // Set to empty to hide the button
@@ -66,18 +67,37 @@ https://fontawesome.com/icons?d=gallery */
 // ...existing code...
 // ...existing code...
 softwareSkills: [
+  // Languages
   {
-    skillName: "AWS",
-    fontAwesomeClassname: "fab fa-aws"
+    skillName: "Java",
+    fontAwesomeClassname: "fab fa-java"
   },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python"
+  },
+  {
+    skillName: "Bash",
+    fontAwesomeClassname: "fas fa-terminal"
+  },
+  {
+    skillName: "SQL",
+    fontAwesomeClassname: "fas fa-database"
+  },
+  // Cloud Platforms
   {
     skillName: "Azure",
     fontAwesomeClassname: "fab fa-microsoft"
   },
   {
+    skillName: "AWS",
+    fontAwesomeClassname: "fab fa-aws"
+  },
+  {
     skillName: "Google Cloud",
     fontAwesomeClassname: "fab fa-google"
   },
+  // Containers & Orchestration
   {
     skillName: "Docker",
     fontAwesomeClassname: "fab fa-docker"
@@ -90,6 +110,7 @@ softwareSkills: [
     skillName: "Helm",
     fontAwesomeClassname: "fas fa-ship"
   },
+  // DevOps & IaC Tools
   {
     skillName: "Terraform",
     fontAwesomeClassname: "fas fa-cubes"
@@ -103,25 +124,14 @@ softwareSkills: [
     fontAwesomeClassname: "fas fa-stream"
   },
   {
+    skillName: "Azure DevOps",
+    fontAwesomeClassname: "fab fa-microsoft"
+  },
+  {
     skillName: "Git",
     fontAwesomeClassname: "fab fa-git-alt"
   },
-  {
-    skillName: "Linux",
-    fontAwesomeClassname: "fab fa-linux"
-  },
-  {
-    skillName: "Python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
-    skillName: "Java",
-    fontAwesomeClassname: "fab fa-java"
-  },
-  {
-    skillName: "Databases",
-    fontAwesomeClassname: "fas fa-database"
-  },
+  // Monitoring & Observability
   {
     skillName: "Prometheus",
     fontAwesomeClassname: "fas fa-chart-line"
@@ -130,17 +140,53 @@ softwareSkills: [
     skillName: "Grafana",
     fontAwesomeClassname: "fas fa-tachometer-alt"
   },
+  // Security & Code Quality
   {
     skillName: "SonarQube",
     fontAwesomeClassname: "fas fa-bug"
   },
   {
+    skillName: "Trivy",
+    fontAwesomeClassname: "fas fa-shield-alt"
+  },
+  {
+    skillName: "Black Duck",
+    fontAwesomeClassname: "fas fa-shield-alt"
+  },
+  // AI & Productivity Tools
+  {
     skillName: "GitHub Copilot",
     fontAwesomeClassname: "fas fa-robot"
   },
   {
-    skillName: "ELK Stack",
-    fontAwesomeClassname: "fas fa-search"
+    skillName: "Devin AI",
+    fontAwesomeClassname: "fas fa-robot"
+  },
+  {
+    skillName: "Cursor AI",
+    fontAwesomeClassname: "fas fa-code"
+  },
+  {
+    skillName: "Windsurf AI",
+    fontAwesomeClassname: "fas fa-wind"
+  },
+  // Linux & Administration
+  {
+    skillName: "Linux",
+    fontAwesomeClassname: "fab fa-linux"
+  },
+  {
+    skillName: "Databases",
+    fontAwesomeClassname: "fas fa-database"
+  },
+  // Project Management & Collaboration
+  {
+    skillName: "Jira",
+    fontAwesomeClassname: "fas fa-tasks"
+  },
+  {
+    skillName: "ServiceNow",
+    fontAwesomeClassname: "fas fa-cog"
   }
 ],
 // ...existing code...
@@ -367,46 +413,37 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Certificate",
           url: "https://drive.google.com/file/d/1go--R7Hq8rk4hy-tIZ4cf0uCFMNgs971/view?usp=share_link"
         },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
-    },
-    // {
-    //   title: "Google Assistant Action",
-    //   subtitle:
-    //     "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-    //   image: require("./assets/images/googleAssistantLogo.webp"),
-    //   imageAlt: "Google Assistant Action Logo",
-    //   footerLink: [
-    //     {
-    //       name: "View Google Assistant Action",
-    //       url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-    //     }
-    //   ]
-    // },
+    ]
+  },
+  {
+    title: "Data Engineering",
+    subtitle:
+      "Advanced certification in Data Engineering, demonstrating expertise in data pipeline architecture, ETL/ELT processes, and scalable data solutions",
+    image: require("./assets/images/Data-Engineering.png"),
+    imageAlt: "Data Engineering Logo",
+    footerLink: [
+      {
+        name: "View Certificate",
+        url: "https://scaler-certificates.s3.amazonaws.com/certificates/Academy/MODULE_CERTIFICATE/ACAD-2026-10564.png?AWSAccessKeyId=AKIAY7MGLG6ZDQZCIEUY&Signature=goGY3%2BSdgHo4EJ%2FubxImCD%2FokxM%3D&Expires=1775190914"
+      }
+    ]
+  },
 
-    // {
-    //   title: "PWA Web App Developer",
-    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-    //   image: require("./assets/images/pwaLogo.webp"),
-    //   imageAlt: "PWA Logo",
-    //   footerLink: [
-    //     {name: "Certification", url: ""},
-    //     {
-    //       name: "Final Project",
-    //       url: "https://pakistan-olx-1.firebaseapp.com/"
-    //     }
-    //   ]
-    // }
+  {
+    title: "Devin AI Foundations",
+    subtitle: "Certified in Devin AI Foundations, mastering AI-driven autonomous software development, intelligent code generation, and enterprise AI integration",
+    image: require("./assets/images/Devin.jpeg"),
+    imageAlt: "Devin AI Foundations Logo",
+    footerLink: [
+      {
+        name: "View Certificate",
+        url: "https://learn.devinenterprise.com/certificates/4d42859e-a272-4547-b2be-0f8d233c2bad"
+      }
+    ]
+  }
   ],
   display: true // Set false to hide this section, defaults to true
 };
