@@ -44,6 +44,7 @@ if (USE_GITHUB_DATA === "true") {
               url
               id
               diskUsage
+              visibility
               primaryLanguage {
                 name
                 color
@@ -79,7 +80,40 @@ if (USE_GITHUB_DATA === "true") {
       data += d;
     });
     res.on("end", () => {
-      fs.writeFile("./public/profile.json", data, function (err) {
+      let response;
+      try {
+        response = JSON.parse(data);
+      } catch (error) {
+        return console.log(error);
+      }
+
+      const githubUser = response.data && response.data.user;
+      if (!githubUser) {
+        return console.log("GitHub response did not contain profile data");
+      }
+
+      const pinnedEdges = githubUser.pinnedItems
+        ? githubUser.pinnedItems.edges.filter(
+            edge => edge && edge.node && edge.node.visibility === "PUBLIC"
+          )
+        : [];
+
+      const publicProfile = {
+        data: {
+          user: {
+            name: githubUser.name,
+            bio: githubUser.bio,
+            avatarUrl: githubUser.avatarUrl,
+            location: githubUser.location,
+            pinnedItems: {
+              totalCount: pinnedEdges.length,
+              edges: pinnedEdges
+            },
+          },
+        },
+      };
+
+      fs.writeFile("./public/profile.json", JSON.stringify(publicProfile), function (err) {
         if (err) return console.log(err);
         console.log("saved file to public/profile.json");
       });
