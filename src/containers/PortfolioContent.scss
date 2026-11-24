@@ -1,0 +1,83 @@
+[data-theme="light"].portfolio-shell {
+  background-color: #f8fafc !important;
+  color: #18181b !important;
+}
+
+[data-theme="light"] header {
+  background-color: rgb(255 255 255 / 88%) !important;
+  border-color: rgb(24 24 27 / 10%) !important;
+}
+
+[data-theme="light"] header nav {
+  background-color: rgb(255 255 255 / 96%) !important;
+}
+
+[data-theme="light"] main section {
+  border-color: rgb(24 24 27 / 8%) !important;
+}
+
+[data-theme="light"] [class~="border-white/10"],
+[data-theme="light"] [class~="border-white/15"],
+[data-theme="light"] [class~="border-white/20"],
+[data-theme="light"] [class~="border-white/30"],
+[data-theme="light"] [class~="border-white/[0.06]"],
+[data-theme="light"] [class~="border-white/[0.08]"] {
+  border-color: rgb(24 24 27 / 12%) !important;
+}
+
+[data-theme="light"] [class~="bg-white/[0.025]"],
+[data-theme="light"] [class~="bg-white/[0.03]"],
+[data-theme="light"] [class~="bg-white/[0.05]"],
+[data-theme="light"] [class~="bg-white/[0.08]"],
+[data-theme="light"] [class~="bg-zinc-900/70"],
+[data-theme="light"] [class~="bg-zinc-950/60"] {
+  background-color: #fff !important;
+}
+
+[data-theme="light"] [class~="bg-white/10"] {
+  background-color: #e4e4e7 !important;
+}
+
+[data-theme="light"] [class~="bg-[#09090b]/95"] {
+  background-color: rgb(255 255 255 / 96%) !important;
+}
+
+[data-theme="light"] .text-white {
+  color: #18181b !important;
+}
+
+[data-theme="light"] .text-zinc-100,
+[data-theme="light"] .text-zinc-200,
+[data-theme="light"] .text-zinc-300 {
+  color: #27272a !important;
+}
+
+[data-theme="light"] .text-zinc-400,
+[data-theme="light"] .text-zinc-500 {
+  color: #52525b !important;
+}
+
+[data-theme="light"] .text-cyan-200 {
+  color: #0e7490 !important;
+}
+
+[data-theme="light"] .text-cyan-100 {
+  color: #155e75 !important;
+}
+
+[data-theme="light"] .text-emerald-200 {
+  color: #166534 !important;
+}
+
+[data-theme="light"] .project-preview .text-white {
+  color: #fff !important;
+}
+
+[data-theme="light"] .project-preview .text-zinc-200,
+[data-theme="light"] .project-preview .text-zinc-300 {
+  color: #e4e4e7 !important;
+}
+
+[data-theme="light"] footer {
+  border-color: rgb(24 24 27 / 10%) !important;
+}

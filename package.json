@@ -10,6 +10,7 @@
     "gh-pages": "^6.3.0",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
+    "lucide-react": "^1.79.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-easy-emoji": "^1.8.1",
@@ -52,7 +53,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.7.0",
     "dotenv": "^8.2.0",
-    "prettier": "^2.3.1"
+    "postcss": "^8.5.33",
+    "prettier": "^2.3.1",
+    "tailwindcss": "^3.4.19"
   }
 }

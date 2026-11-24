@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "../assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -201,7 +201,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Anil Neerukonda Institute of Technology and Sciences",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("../assets/images/harvardLogo.png"),
       subHeader: "Bachelors in Information Technology",
       duration: "September 2012 - April 2016",
       descBullets: [
@@ -210,7 +210,7 @@ const educationInfo = {
     },
     {
       schoolName: "Sri Chaitanya Junior College",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("../assets/images/stanfordLogo.png"),
       subHeader: "Specialized in Science and Mathematics",
       duration: "June 2010 - March 2012",
       desc: "Ranked top 10% in the program",
@@ -221,7 +221,7 @@ const educationInfo = {
     },
    {
       schoolName: "Geetanjali Public School",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("../assets/images/stanfordLogo.png"),
       subHeader: "",
       duration: "June 2000 - March 2010",
       desc: "Completed foundational schooling from Kindergarten to 10th Standard with a consistent focus on academic excellence and holistic development",
@@ -320,10 +320,21 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "DevOps Lead",
+      team: "Integration Team",
+      company: "L'Oréal India",
+      companylogo: require("../assets/images/loreal-logo.png"),
+      date: "June 2026 – Present",
+      descBullets: [
+        "Automate CI/CD pipelines, end-to-end testing, and regression testing using tools such as Testim and qTest.",
+        "Develop GPT Companions and code agents to automate engineering workflows."
+      ]
+    },
+    {
       role: "Technology Lead",
       company: "ValueLabs",
-      companylogo: require("./assets/images/valuelabs-logo.png"),
-      date: "December 2024 – Present",
+      companylogo: require("../assets/images/valuelabs-logo.png"),
+      date: "December 2024 – May 2026",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Orchestrated containerized microservice deployments using Docker and Kubernetes, while automating legacy IIS workloads via Azure Pipelines for streamlined delivery.",  
@@ -333,7 +344,7 @@ const workExperiences = {
     {
       role: "Senior Software Engineer",
       company: "Excelra Knowledge Solutions Pvt Ltd",
-      companylogo: require("./assets/images/excelra-logo.jpg"),
+      companylogo: require("../assets/images/excelra-logo.jpg"),
       date: "June 2021 – November 2024",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       descBullets: [
@@ -344,7 +355,7 @@ const workExperiences = {
     {
       role: "Technology Analyst",
       company: "Infosys Ltd",
-      companylogo: require("./assets/images/infosys-logo.png"),
+      companylogo: require("../assets/images/infosys-logo.png"),
       date: "May 2016 – June 2021",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       descBullets: [
@@ -370,7 +381,7 @@ const bigProjects = {
   subtitle: "Projects that I have worked on which has created an impact to the users and clients",
   projects: [
     {
-      image: require("./assets/images/update-in-progress.jpg"),
+      image: require("../assets/images/update-in-progress.jpg"),
       projectName: "Update in Progress",
       projectDesc: "Update in Progress",
       // footerLink: [
@@ -382,7 +393,7 @@ const bigProjects = {
       //]
     },
     {
-      image: require("./assets/images/update-in-progress.jpg"),
+      image: require("../assets/images/update-in-progress.jpg"),
       projectName: "Update in Progress",
       projectDesc: "Update in Progress",
       // footerLink: [
@@ -393,7 +404,7 @@ const bigProjects = {
       // ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -409,7 +420,7 @@ const achievementSection = {
       title: "Java SE 8 Programmer 1",
       subtitle:
         "Certified as a Java SE 8 Programmer I, demonstrating proficiency in core Java programming and object-oriented design principles.",
-      image: require("./assets/images/java-se8-logo.png"),
+      image: require("../assets/images/java-se8-logo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
@@ -422,7 +433,7 @@ const achievementSection = {
     title: "Data Engineering",
     subtitle:
       "Advanced certification in Data Engineering, demonstrating expertise in data pipeline architecture, ETL/ELT processes, and scalable data solutions",
-    image: require("./assets/images/Data-Engineering.png"),
+    image: require("../assets/images/Data-Engineering.png"),
     imageAlt: "Data Engineering Logo",
     footerLink: [
       {
@@ -435,7 +446,7 @@ const achievementSection = {
   {
     title: "Devin AI Foundations",
     subtitle: "Certified in Devin AI Foundations, mastering AI-driven autonomous software development, intelligent code generation, and enterprise AI integration",
-    image: require("./assets/images/Devin.jpeg"),
+    image: require("../assets/images/Devin.jpeg"),
     imageAlt: "Devin AI Foundations Logo",
     footerLink: [
       {
@@ -475,7 +486,7 @@ const blogSection = {
         "Curates high-level insights from industry leaders on platform engineering, observability, and scaling DevOps in enterprise environments."
     }    
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -529,7 +540,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer

@@ -11,7 +11,7 @@ import {
   blogSection,
   achievementSection,
   resumeSection
-} from "../../portfolio";
+} from "../../data/portfolioData";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
